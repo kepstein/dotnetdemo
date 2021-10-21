@@ -32,3 +32,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: S3Upload@1
+  inputs:
+    awsCredentials: 'Personal Account'
+    regionName: 'us-east-1'
+    bucketName: 'epstein.co.za'
+    sourceFolder: '/azure'
+    globExpressions: '**'
