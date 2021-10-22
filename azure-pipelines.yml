@@ -45,6 +45,6 @@ steps:
   inputs:
     awsCredentials: 'Personal Account'
     regionName: 'us-east-1'
-    bucketName: 'epstein.co.za'
+    bucketName: 'epstein.co.za/azure'
     sourceFolder: $(Build.ArtifactStagingDirectory)
     globExpressions: '**'
