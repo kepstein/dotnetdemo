@@ -47,4 +47,4 @@ steps:
     regionName: 'us-east-1'
     bucketName: 'epstein.co.za'
     sourceFolder: $(Build.ArtifactStagingDirectory)
-    globExpressions: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    globExpressions: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
